@@ -1,9 +1,12 @@
+const fs= require("fs")
+const pathfs= process.argv[2]
 
+fs.readFile(pathfs ,"utf-8",(err,data)=>{
+    if (err){
+        return (err)
+   } 
+     console.log(data)
+   })
+ 
+ 
 
-const mdLinks = require("md-links-extractor");
-mdLinks("./some/example.md", { validate: true })
-  .then(links => {
-    // => [{ file, line, href, text, ok, status }]
-  })
-  .catch(err)
-  

@@ -1,8 +1,14 @@
+
 const pathfs= process.argv[2]
 const arrayreadFile= require (`./readFile`)
 
-arrayreadFile(pathfs,(error,data)=>
-{
-    console.log(data)
+//module.exports = mdlinks = (pathfs,options)=>{
 
+arrayreadFile(pathfs,(error,data)=>{ 
+    if (error){
+    console.log(error)
+    }
+      console.log(data)  
 })
+
+//}

@@ -1,15 +1,24 @@
 
-const pathfs= process.argv[2]
-const arrayreadFile= require (`./readFile`)
+//const pathfs= process.argv[2]
+const readFile= require ('./readFile.js')
+const verifyLinks = require (`./validateLinks.js`)
+//const pathfs= process.argv[2];
+//const options = process.argv [3]
 
+async function mdLinks() {
+    const pathfs= process.argv[2];
+       let arrayLinks = await readFile(pathfs)
+       //let Links = await verifyLinks(arrayLinks)
+       console.log(arrayLinks)
 
-arrayreadFile(pathfs,(error,data)=>{ 
-    if (error){
-    console.log(error)
-    }
+    //    if (options === --validate){
+    //        let validate = await validateFile(Links)
+    //        if(options=== --stats){
+    //            let stats =await stats()
+    //        }
+       }
+       //
+   
+//}
 
-      console.log(data)  
-      return (data)
-})
-
-
+ return mdLinks();

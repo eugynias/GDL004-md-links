@@ -27,4 +27,3 @@ const statusLinks = (arrayLinks) => {
 // }
 module.exports = statusLinks;
 
-//await Promise.all(statusLinks(links))

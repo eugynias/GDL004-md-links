@@ -4,8 +4,9 @@ const statusLinks = require (`./validateLinks.js`)
 const getStats= require (`./stats.js`)
 const options = process.argv [3]
 
- async function mdLinks() {
-    
+module.exports = async function mdLinks() {
+    console.log('funcion por defecto')
+    return null;
     const pathfs= process.argv[2];
        let arrayLinks = await readFile(pathfs)
        let links = await Promise.all(statusLinks(arrayLinks));
@@ -24,6 +25,6 @@ const options = process.argv [3]
    
     }
 
-  return mdLinks();
+//   return mdLinks();
 
 

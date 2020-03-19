@@ -10,8 +10,8 @@ const pathfs = process.argv[2]
                       let expreg = /\[(.*)\]\((.*)\)/;       
                         const regex = new RegExp(expression);
                             const links = data.match(regex);
-                               for (i = 0; i < links.length; i++) { //itera mi archivo
-                                let separar = expreg.exec(links[i]); //separa en 2 grupos el link
+                               for (i = 0; i < links.length; i++) { 
+                                let separar = expreg.exec(links[i]); 
                                 let result = {
                                   texto: separar[1],
                                   href: separar[2],

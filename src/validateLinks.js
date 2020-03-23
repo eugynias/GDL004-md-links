@@ -4,7 +4,7 @@ const fetch = require('node-fetch');
 const pathfs= process.argv[2]
 
 const statusLinks = (arrayLinks) => {
-    //return Promise.all= arrayLinks.map(  async url => {
+   // return Promise.all= arrayLinks.map(  async url => {
         const newArrayLinks = arrayLinks.map(  async url => {
            
             try{
@@ -17,9 +17,10 @@ const statusLinks = (arrayLinks) => {
                 return url;
             }
         })
-          return newArrayLinks;
+          //return newArrayLinks;
+          return Promise.all(newArrayLinks)
 }
-//   return Promise.all(newArrayLinks)
+ // return Promise.all(newArrayLinks)
 //   resolve (arrayLinks)
 //   reject ('Error')
 

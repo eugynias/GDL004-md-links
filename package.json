@@ -1,0 +1,25 @@
+{
+  "name": "md-links",
+  "version": "1.0.1",
+  "description": "\"eugynias/md-links\"",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "\u0016jest --verbose --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eugynias/GDL004-md-links.git"
+  },
+  "author": "\"Eugenia\"",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eugynias/GDL004-md-links/issues"
+  },
+  "homepage": "https://github.com/eugynias/GDL004-md-links#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  }
+}

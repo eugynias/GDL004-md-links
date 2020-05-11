@@ -13,7 +13,7 @@ const pathfs = process.argv[2]
                                for (i = 0; i < links.length; i++) { 
                                 let separar = expreg.exec(links[i]); 
                                 let result = {
-                                  texto: separar[1],
+                                  texto: separar[1],//Indice en el que se encuentran esos datos
                                   href: separar[2],
                                   file: pathfs
                                 }

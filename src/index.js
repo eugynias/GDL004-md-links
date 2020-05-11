@@ -5,7 +5,7 @@ const getStats= require (`./stats.js`)
 //const options = process.argv [3]
 const pathfs= process.argv[2];
 
-module.exports.mdLinks= (pathfs,options)=>{
+module.exports.mdLinks= (pathfs,options={validate:false,stats:false})=>{
     return new Promise ((resolve,reject)=>{
        readFile(pathfs)
        .then ((text)=>{
@@ -44,14 +44,9 @@ module.exports.mdLinks= (pathfs,options)=>{
        })
       
         }
+        //Ojo ...se pueden utilizar varios resolve
     //return mdLinks();
-//         if (options =="--validate")
-    
-// readFile(pathfs)
-//         .then
-//     })
-// }
-
+//         Ejemplo de RESOLUCION CON ASYNC
 // module.exports = async function mdLinks() {
 //     console.log('funcion por defecto')
 //     return null;
